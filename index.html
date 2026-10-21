@@ -325,19 +325,12 @@
           <div><div>Location</div><div>157 Main Rd, Hepburn Springs, VIC</div></div>
         </div>
       </div>
-      <form>
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" type="text" placeholder="Your name">
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="you@business.com.au">
-        </div>
-        <div class="field">
-          <label for="message">What are you after?</label>
-          <textarea id="message" placeholder="Tell us a bit about your business and goals..."></textarea>
-        </div>
+      <form action="https://formspree.io/f/meaebral" method="POST">
+        <input id="name" name="name" type="text" placeholder="Your name">
+...
+<input id="email" name="email" type="email" placeholder="you@business.com.au">
+...
+<textarea id="message" name="message" placeholder="Tell us a bit about your business and goals..."></textarea>
         <button type="submit" class="btn btn-primary">Send message <span class="arrow">→</span></button>
       </form>
     </div>
